@@ -117,7 +117,8 @@ That frontier models must have burned billions of dollars.
 This is a small research model. Its outputs may be inaccurate,inconsistent or inappropriate. Its knowledge is small and it cant form complex english sentences, do medium/advanced maths or give reliable facts about the real world.
 
 ## Previous version(16M):
-(insert link)
+[saturnGPT_v1 (16M)](https://github.com/whyaskidk91-web/saturnGPT)
+
 
 ## Data credits:
 - **TinyStories**: Ronen Eldan & Yuanzhi Li (Microsoft Research), 2023. CDLA-Sharing-1.0
