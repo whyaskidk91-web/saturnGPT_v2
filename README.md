@@ -24,7 +24,9 @@ This is a basic Transformer model in GPT2 Style with 124.6million parameters.
 
 
 ## Chat samples:
-
+NOTE: The model can’t remember context across messages.
+      Each message is answered on its own.
+      The model uses 0.7 temperature.
 
 ```
 cuda 768
@@ -62,6 +64,13 @@ tokenizer → pretrain → midtrain → SFT
 
 ~20 minutes on one A100 per 1000 steps: ~4.5h training
 
+![](loss_pretrain.png)
+![](loss_midtrain.png)
+![](loss_sfttrain.png)
+
+!IMPORTANT: The test loss in SFT rises, this could be either
+            overfitting or noise from the tiny test set used.
+
 ## What saturnGPT version 2 can and cant do:
 Saturn does create linguistic mostly valid sentences while grabbing up themes. But it often doesnt entirely stick to the topic and rather broader correlations as well as it misses critical data, so it often makes things up. Same with complex themes or niche topics, it prob will output more nonsense sounding texts.
 
@@ -80,6 +89,8 @@ Saturn does create linguistic mostly valid sentences while grabbing up themes. B
 
 ## RUN MODEL:
 Following code will run the model with one click in one cell. The weights will get loaded from my hugging face repository:
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/whyaskidk91-web/saturnGPT_v2/blob/main/RUN_ME.ipynb)
+
 
 ## FULL MODEL:
 Important mention:
